@@ -1,0 +1,178 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #2b2b2b;
+    background-color: #fffef8;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    color: #1a1a1a;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 3rem 0 1.5rem 0;
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1.2rem 0;
+    color: #1a1a1a;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: #0066cc;
+}
+
+/* Emphasis - this creates the italic keyword effect */
+em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+}
+
+nav a {
+    margin-right: 1.5rem;
+    color: #666;
+}
+
+nav a:hover {
+    color: #0066cc;
+}
+
+/* Intro paragraph */
+.intro {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Note style */
+.note {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* Images */
+.section-image {
+    margin: 3rem 0;
+    max-width: 100%;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Lists */
+.papers-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.papers-list li {
+    margin-bottom: 1.3rem;
+    line-height: 1.75;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.papers-list li:before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 17px;
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
