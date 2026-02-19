@@ -1,0 +1,126 @@
+/* Conference page overrides and layout */
+
+/* Widen the container beyond the personal site's 680px */
+body {
+    max-width: 980px;
+}
+
+/* Use a class instead of .container so we don't fight style.css */
+.conf-wrap {
+    /* inherits body width */
+}
+
+/* Two-column grid: main content + sidebar */
+.conf-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 0 4rem;
+    align-items: start;
+}
+
+/* Main column */
+.conf-main section {
+    margin-bottom: 2rem;
+}
+
+.conf-main h2 {
+    margin-top: 0;
+}
+
+/* Sidebar */
+.conf-sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+.sidebar-block {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.2rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.sidebar-block h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: #1a1a1a;
+}
+
+.sidebar-block p {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Header: symbol + title side by side */
+.conf-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.conf-logo {
+    flex-shrink: 0;
+    height: 58px;
+    width: auto;
+}
+
+.conf-header-inner h1 {
+    margin-bottom: 0.2rem;
+    margin-top: 0;
+}
+
+/* Conference subtitle under the h1 */
+.conf-subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Divider: keep it full-width within the main column */
+.divider {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.divider svg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Tighten section spacing within main column */
+.conf-main section + section {
+    margin-top: 0;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 720px) {
+    .conf-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .conf-sidebar {
+        position: static;
+        border-top: 1px solid #e0e0e0;
+        padding-top: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .sidebar-block {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .sidebar-block + .sidebar-block {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 1.2rem;
+    }
+}
