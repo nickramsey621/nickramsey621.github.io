@@ -256,6 +256,27 @@ strong { font-weight: 600; color: var(--ink); }
     font-style: italic;
 }
 
+/* ---------- Venue image ---------- */
+.venue-image {
+    margin: 3.2rem 0 3.5rem;
+}
+
+.venue-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.venue-image figcaption {
+    margin-top: 0.85rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 0.88rem;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
 /* ---------- Star divider ---------- */
 .star-divider {
     display: flex;
