@@ -211,13 +211,62 @@ strong { font-weight: 600; color: var(--ink); }
     margin-top: 0.1rem;
 }
 
-.day-card ul { list-style: none; padding: 0; margin: 0; }
+.day-card .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-.day-card li {
+.day-card .slot {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 0.6rem;
+    padding: 0.42rem 0;
+    border-top: 1px solid var(--border-soft);
+    line-height: 1.35;
+    font-size: 0.88rem;
+}
+
+.day-card .slot:first-child { border-top: 1px solid var(--border); }
+
+.day-card .slot .time {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 0.74rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+    padding-top: 2px;
+    white-space: nowrap;
+}
+
+.day-card .slot .event { color: var(--ink-soft); }
+.day-card .slot-break .event { color: var(--muted); font-style: italic; }
+.day-card .slot-lecture .event { color: var(--ink); font-weight: 500; }
+.day-card .slot .event em { color: var(--terracotta); font-weight: 500; }
+
+.schedule-notes {
+    margin-top: 2.4rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--border);
     font-size: 0.95rem;
+}
+
+.schedule-notes p {
+    margin-bottom: 0.75rem;
     color: var(--ink-soft);
-    padding: 0.3rem 0;
-    line-height: 1.45;
+    line-height: 1.6;
+}
+
+.schedule-notes p:last-child { margin-bottom: 0; }
+
+.schedule-notes .label {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    color: var(--terracotta);
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-right: 0.55rem;
 }
 
 /* ---------- People list ---------- */
