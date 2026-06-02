@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(identify pic1.jpeg pic2.jpeg pic3.jpeg)",
+      "Bash(sips -g pixelWidth -g pixelHeight pic1.jpeg pic2.jpeg pic3.jpeg)"
+    ]
+  }
+}
