@@ -3,7 +3,18 @@
     "allow": [
       "Bash(git commit -m ' *)",
       "Bash(identify pic1.jpeg pic2.jpeg pic3.jpeg)",
-      "Bash(sips -g pixelWidth -g pixelHeight pic1.jpeg pic2.jpeg pic3.jpeg)"
+      "Bash(sips -g pixelWidth -g pixelHeight pic1.jpeg pic2.jpeg pic3.jpeg)",
+      "Bash(ls ~/.ssh/ 2>/dev/null | grep -E \"^id_\" || echo \"no SSH keys found\")",
+      "Read(//Users/sramsey5/.ssh/**)",
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(mkdir -p ~/forking-festival-docs)",
+      "Read(//Users/sramsey5/**)",
+      "Bash(pdflatex -interaction=nonstopmode -halt-on-error schedule.tex)",
+      "Bash(sips -g pixelWidth -g pixelHeight ~/mathsite/groupphoto.jpeg)"
+    ],
+    "additionalDirectories": [
+      "/Users/sramsey5/forking-festival-docs"
     ]
   }
 }
