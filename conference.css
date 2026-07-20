@@ -100,6 +100,51 @@ body {
     margin-top: 0;
 }
 
+/* Schedule grid */
+.schedule-scroll {
+    overflow-x: auto;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.schedule-grid {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.95rem;
+    min-width: 520px;
+}
+
+.schedule-grid th,
+.schedule-grid td {
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem 0.7rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.schedule-grid thead th {
+    font-weight: 600;
+    color: #1a1a1a;
+    background: #f7f7f7;
+    white-space: nowrap;
+}
+
+.schedule-grid td.t {
+    color: #666;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.schedule-grid td.ev {
+    color: #888;
+    font-style: italic;
+}
+
+.schedule-grid .online {
+    color: #888;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
 /* Mobile: stack columns */
 @media (max-width: 720px) {
     .conf-grid {
